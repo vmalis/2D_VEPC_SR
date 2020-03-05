@@ -1,4 +1,4 @@
-# 2D VEPC_SR_Toolbox
+# 2D VEPC_SR_Framework
 ## 2D Strain Rate
 
 This is the set of codes used to process Velocity Encoded Phase-Contrast images.
