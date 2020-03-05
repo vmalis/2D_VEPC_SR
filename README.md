@@ -2,7 +2,7 @@
 ## 2D Strain Rate
 
 <p align="center">
-  <img width="576" height="99" src=/image/preview.png>
+  <img width="576" height="297" src=/image/preview.png>
 </p>
 
 The set of MATLAM codes used to process Velocity Encoded Phase-Contrast images.
