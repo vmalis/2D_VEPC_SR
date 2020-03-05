@@ -23,3 +23,6 @@ Magn. Reson. Med, 79: 912-922. doi:10.1002/mrm.26759](https://onlinelibrary.wile
 Shear strain rate from phase contrast velocity encoded MRI: Application to study 
 effects of aging in the medial gastrocnemius muscle. 
 J. Magn. Reson. Imaging, 48: 1351-1357. doi:10.1002/jmri.26030](https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.26030)
+
+[![DOI](https://zenodo.org/badge/168613292.svg)](https://zenodo.org/badge/latestdoi/168613292)
+
