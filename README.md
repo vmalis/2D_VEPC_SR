@@ -7,7 +7,7 @@
   <img width="576" height="297" src=/image/preview.png>
 </p>
 
-The set of MATLAM codes used to process Velocity Encoded Phase-Contrast images.
+The set of MATLAB codes used to process Velocity Encoded Phase-Contrast images.
 The description of the analysis is given in the following papers:
 
 - [Sinha, U., Malis, V., Csapo, R., Moghadasi, A., Kinugasa, R. and Sinha, S. (2015), 
