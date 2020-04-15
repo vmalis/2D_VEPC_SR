@@ -29,7 +29,7 @@
 %
 
 %frame number
-N=11;
+N=2;
 
 
 [FileName,PathName] = uigetfile('*.mat','choose a mat file');
@@ -75,8 +75,9 @@ I=squeeze(im_m(:,:,N));
 figure
 imshow(mat2gray(I),'InitialMagnification',300);
 %h=imellipse;
-h=impoly;
-wait(h);
+%h=impoly;
+
+h=drawpolygon();
 MASK=createMask(h);
 
 MASK2=zeros(size(MASK));
@@ -95,13 +96,14 @@ Sx(1:2:end)=[];
 Sy(1:2:end)=[];
 Sx(1:2:end)=[];
 
-imshow(mat2gray(I),'InitialMagnification',200)
+imshow(mat2gray(I),'InitialMagnification',600)
+colormap(gray)
 freezeColors
 colormap(jet)
 hold on
 
 
-% Streamcolor(X,Y,squeeze(PEV_u(:,:,N)).*MASK,squeeze(PEV_v(:,:,N)).*MASK,Sx,Sy,squeeze(z_pev(:,:,N)).*MASK)
+Streamcolor(X,Y,squeeze(PEV_u(:,:,N)).*MASK,squeeze(PEV_v(:,:,N)).*MASK,Sx,Sy,squeeze(z_pev(:,:,N)).*MASK)
 
 % hold on
 %         for k=1:size(fiber_X,1)
@@ -109,22 +111,23 @@ hold on
 %         end
 % hold off
 
-% filename=sprintf('PEV%2d.png', N);
-% 
-% 
-% export_fig pev20 '-png' -m4
-% 
+filename=sprintf('PEV%2d.png', N);
+
+
+export_fig pev3 '-png' -m4
+
 % close all
-
-
-imshow(mat2gray(I),'InitialMagnification',200)
-freezeColors
-colormap(jet)
-hold on
-
-Streamcolor(X,Y,squeeze(NEV_u(:,:,N)).*MASK,squeeze(NEV_v(:,:,N)).*MASK,Sx,Sy,squeeze(z_nev(:,:,N)).*MASK)
-filename=sprintf('NEV%2d.png', N);
-export_fig nev11 '-png' -m4
-
+% 
+% 
+% imshow(mat2gray(I),'InitialMagnification',500)
+% colormap(gray)
+% freezeColors
+% colormap(jet)
+% hold on
+% 
+% Streamcolor(X,Y,squeeze(NEV_u(:,:,N)).*MASK,squeeze(NEV_v(:,:,N)).*MASK,Sx,Sy,squeeze(z_nev(:,:,N)).*MASK)
+% filename=sprintf('NEV%2d.png', N);
+% export_fig nev11 '-png' -m4
+% 
 
 close all

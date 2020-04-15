@@ -49,7 +49,7 @@ cmap=colormap;
 
 [verts x y z u v w sx sy sz Vmag] = parseargs(nargin,varargin);
 %Vmax=max(Vmag(:));
-Vmax=1000;
+Vmax=300;
 
 if isempty(verts)
   if isempty(w)       % 2D
